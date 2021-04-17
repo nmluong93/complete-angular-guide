@@ -17,3 +17,7 @@ placeholder="server name"> -->
 
 <!-- *ngIf is a strucutral directive, that is why its name starts with star-->
 <p *ngIf = "serverCreated">Server was created, Name is {{serverName}}</p>
+
+<br>
+
+<app-server *ngFor="let server of servers"></app-server>
