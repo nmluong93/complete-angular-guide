@@ -1,2 +1,5 @@
 
-<p>Server with id = {{id}} is {{serverStatus}}</p>
+<!-- we bind property of ngStyle directive-->
+<!-- <p [ngStyle]="{'background-color': getColor()}">Server with id = {{id}} is {{serverStatus}}</p> -->
+<p [ngStyle]="{backgroundColor: getColor()}">Server with id = {{id}} is {{serverStatus}}</p>
+
