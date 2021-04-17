@@ -1,5 +1,9 @@
 
 <!-- we bind property of ngStyle directive-->
 <!-- <p [ngStyle]="{'background-color': getColor()}">Server with id = {{id}} is {{serverStatus}}</p> -->
-<p [ngStyle]="{backgroundColor: getColor()}">Server with id = {{id}} is {{serverStatus}}</p>
+<!--"{backgroundColor: getColor()}" is a javascript object-->
+<p 
+ [ngStyle]="{backgroundColor: getColor()}"
+ [ngClass]="{online : serverStatus === 'online'}"
+ >Server with id = {{id}} is {{serverStatus}}</p>
 
