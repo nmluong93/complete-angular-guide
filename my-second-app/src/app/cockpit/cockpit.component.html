@@ -2,7 +2,9 @@
     <div class="col-xs-12">
         <p>Add a new server or a blueprint</p>
         <label> Server Name</label>
-        <input type="text" class="form-control" [(ngModel)]="serverName">
+        <!-- <input type="text" class="form-control" [(ngModel)]="serverName"> -->
+        <!--https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656094#questions View child-->
+        <input type="text" class="form-control" #serverNameInput>
         <label> Server Content</label>
         <input type="text" class="form-control" #serverContentInput>
         <button class="btn btn-primary" (click)="onServerCreated(serverContentInput)">Add server</button>
