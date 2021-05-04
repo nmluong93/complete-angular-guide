@@ -1,0 +1,9 @@
+<div [ngClass]="{blueprint: 'blueprint' === element.type,
+server:'server' === element.type}">
+    <div class="row">
+        {{element.name}}
+    </div>
+    <div class="row">
+        {{element.content}}
+    </div>
+</div>
