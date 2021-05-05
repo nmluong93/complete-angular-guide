@@ -28,4 +28,11 @@ export class AppComponent {
       content: blueprint.serverContent
     })
   }
+
+  onChangeFirst(){
+    this.serverElements[0].name = "Changes";
+  }
+  onDestroyFirst(){
+    this.serverElements.splice(0, 1);// remove first element => empty then
+  }
 }

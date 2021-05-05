@@ -1,9 +1,17 @@
-<div [ngClass]="{blueprint: 'blueprint' === element.type,
-server:'server' === element.type}">
-    <div class="row">
-      Server name :   {{element.name}}
-    </div>
-    <div class="row">
-      Content :  {{element.content}}
-    </div>
+<div class="panel panel-default">
+  <div class="panel-heading" [ngClass]="{blueprint: 'blueprint' === element.type,
+  server:'server' === element.type}">
+    {{name}}
+  </div>
+  <div class="panel-body">
+    {{element.content}}
+  </div>
 </div>
+<!-- <div>
+  <div class="row">
+    Server name : {{name}}
+  </div>
+  <div class="row">
+    Content : {{element.content}}
+  </div>
+</div> -->
