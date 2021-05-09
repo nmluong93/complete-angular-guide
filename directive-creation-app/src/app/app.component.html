@@ -23,3 +23,10 @@
 <ul *appUnless="oddNumber">
   <li *ngFor="let ev of evenNumbers">{{ev}}</li>
 </ul>
+
+<!--ngSwitch-->
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="5">Value is 5</p>
+  <p *ngSwitchCase="2">Value is 2</p>
+  <p *ngSwitchDefault>Value is default</p>
+</div>

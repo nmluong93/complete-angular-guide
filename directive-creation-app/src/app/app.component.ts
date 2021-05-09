@@ -13,4 +13,6 @@ export class AppComponent {
   oddNumbers : number [] = [1,3,5,7];
   evenNumbers : number[] = [2,4,6];
 
+  value = 2;
+
 }
