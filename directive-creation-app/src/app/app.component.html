@@ -1,2 +1,20 @@
 <p appBasicHighlight>Style of BasicHighlightDirective</p>
 <p appBetterHighlight [defaultColor] ="'yellow'" [highlightColor] = "'violet'">Style of BetterHighlightDirective</p>
+
+
+<button class="btn btn-success" (click)="oddNumber = !oddNumber">Show number</button>
+
+<ul *ngIf="oddNumber">
+  <li *ngFor="let odd of oddNumbers">{{odd}}</li>
+</ul>
+<!--Another way to use ngIf-->
+<ng-template [ngIf]="oddNumber">
+  <ul >
+    <li *ngFor="let odd of oddNumbers">{{odd}}</li>
+  </ul>
+
+</ng-template>
+
+<ul *ngIf="!oddNumber">
+  <li *ngFor="let ev of evenNumbers">{{ev}}</li>
+</ul>
