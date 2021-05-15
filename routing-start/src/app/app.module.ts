@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'users' /* localhost:4200/users */, component: UsersComponent },
+  { path: 'users/:id/:name', component: UserComponent /*not UsersComponent*/},
   { path: 'servers' /* localhost:4200/users */, component: ServersComponent }
 ];
 
