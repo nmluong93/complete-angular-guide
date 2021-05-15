@@ -16,11 +16,22 @@ import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'users' /* localhost:4200/users */, component: UsersComponent },
-  { path: 'users/:id/:name', component: UserComponent /*not UsersComponent*/},
-  { path: 'servers' /* localhost:4200/servers */, component: ServersComponent },
-  { path: 'servers/:id/edit', component: EditServerComponent },
-  { path: 'servers/:id', component: ServerComponent },
+  {
+    path: 'users' /* localhost:4200/users */, component: UsersComponent, children: [
+      { path: ':id/:name', component: UserComponent }
+    ]
+  },
+  // { path: 'users/:id/:name', component: UserComponent /*not UsersComponent*/ },
+  // { path: 'servers' /* localhost:4200/servers */, component: ServersComponent },
+  // { path: 'servers/:id', component: ServerComponent },
+  // { path: 'servers/:id/edit', component: EditServerComponent },
+  {
+    path: 'servers', component: ServersComponent, children: [
+      { path: ':id', component: ServerComponent },
+      { path: ':id/edit', component: EditServerComponent }
+    ]
+  }
+
 ];
 
 @NgModule({
