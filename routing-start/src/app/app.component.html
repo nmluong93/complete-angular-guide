@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li>
+          <!--
+          we must use routerLinkActiveOptions to make Home link not active (highlighted) because
+          whenever we navigate to other link like localhost:4200/users the link always includes the empty link which relates to
+          Home link => basically there are 2 link : '/' and '/users' => so we must add option exact = true to make it active based
+          on the exact link matching.
+          -->
+          <a
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            routerLink="/">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="/servers">Servers</a></li>
+        <!-- without slash or ./ (dot and slash) in path => relative link and absolute link vice versa-->
+        <li><a [routerLink]="['/users']" routerLinkActive="active">Users </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
