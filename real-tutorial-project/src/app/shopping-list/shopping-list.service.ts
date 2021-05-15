@@ -1,5 +1,5 @@
-import { EventEmitter } from "@angular/core";
-import { Ingredient } from "../shared/ingredient.model";
+import { EventEmitter } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
 
 export class ShoppingListService {
 
@@ -11,11 +11,28 @@ export class ShoppingListService {
   ];
 
   getIngredients() {
-    return this.ingredients.slice(); // because of this slice() => any change in ingredients didn't refect to the getIngredients() result before
+    // because of this slice() => any change in ingredients didn't reflect to the getIngredients() result before
+    return this.ingredients.slice();
   }
 
-  addIngredient(ingr: Ingredient) {
-    this.ingredients.push(ingr);
+  addIngredient(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+    this.notifyDataChanged();
+  }
+
+  addIngredients(ingredients: Ingredient []) {
+    if (ingredients.length === 0) {
+      return;
+    }
+    // for (const ingredient of ingredients) {
+    //  this.ingredients.push(ingredient);
+    // }
+    // this.ingredientsChanged.emit(this.ingredients.slice());
+    this.ingredients.push(...ingredients);
+    this.notifyDataChanged();
+  }
+  notifyDataChanged() {
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
+
 }
