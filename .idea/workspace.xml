@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routing-start/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routing-start/src/app/auth-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routing-start/src/app/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routing-start/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routing-start/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routing-start/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routing-start/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620742392963</updated>
-      <workItem from="1621041126259" duration="22453000" />
+      <workItem from="1621041126259" duration="23767000" />
     </task>
     <servers />
   </component>
@@ -83,6 +85,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="830" y="275" key="#com.intellij.ide.util.MemberChooser" timestamp="1621132454394">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="830" y="275" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1621132454394" />
     <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1621045928935">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
