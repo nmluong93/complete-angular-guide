@@ -18,14 +18,19 @@ export class ServerComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // add + to covert this id string to number type
+    this.route.data
+      .subscribe(d => {
+        // the 'server' must be the same in routing module 'resolve: { server: ServerResolverService }'
+        this.server = d['server'];
+    });
+   /* // add + to covert this id string to number type
     const id = +this.route.snapshot.params['id'];
     this.server = this.serversService.getServer(id);
     this.route.params
       .subscribe(params => {
         const id1 = +params['id'];
         this.server = this.serversService.getServer(id1);
-      });
+      });*/
   }
 
   onEdit() {
