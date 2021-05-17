@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -21,27 +22,35 @@ export class HomeComponent implements OnInit, OnDestroy {
       let i = 0;
       setInterval(() => {
         observer.next(i);
-        i++;
+
         if (i === 2) {
           observer.complete();
         }
         if (i > 3) {
           observer.error(new Error('Error occurs'));
-
         }
+        i++;
       }, 1000);
     });
 
-    this.subscriber = customedObs.subscribe(data => {
-      console.log(data);
-    },
-      error => {
-        console.log(`Error occurs in Observable ${error}`);
-        alert(error.message);
+    // OPERATOR
+    customedObs
+
+    this.subscriber = customedObs
+      .pipe(filter(d => d > 0),
+        map((data: number) => {
+        return 'Round ' + (data + 1);
+      }))
+      .subscribe(data => {
+        console.log(data);
       },
-      () => {
-        alert('Complete');
-      });
+        error => {
+          console.log(`Error occurs in Observable ${error}`);
+          alert(error.message);
+        },
+        () => {
+          alert('Complete');
+        });
 
   }
 
