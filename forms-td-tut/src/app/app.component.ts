@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
 
   @ViewChild('f') form: NgForm;
-
+  genders = ['male', 'female'];
   // onSubmit(f: NgForm): void {
   //   console.log(f);
   // }
