@@ -70,7 +70,19 @@
           <span>Your reply is : {{answer}}</span>
         </div>
         <button class="btn btn-primary" [disabled]="!f.valid" type="submit">Submit</button>
+        <button class="btn btn-default" (click)="signUpForm.reset()" type="reset">Reset</button>
       </form>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12" *ngIf="f.submitted">
+      <p>Your data</p>
+      <p>Username: {{user.username}}</p>
+      <p>Email: {{user.email}}</p>
+      <p>Gender: {{user.gender}}</p>
+      <p>Secret question: {{user.secret}}</p>
+      <p>Answer: {{user.answer}}</p>
     </div>
   </div>
 </div>
