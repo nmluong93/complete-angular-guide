@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
 
-  @ViewChild('f') form: NgForm;
+  @ViewChild('f') signUpForm: NgForm;
   genders = ['male', 'female'];
   // onSubmit(f: NgForm): void {
   //   console.log(f);
@@ -18,9 +18,29 @@ export class AppComponent {
 
   suggestUserName(): void {
     const suggestedName = 'Superuser';
+    // this.form.setValue({
+    //   userData: {
+    //     username: suggestedName,
+    //     email: ''
+    //   },
+    //   secret: 'pet',
+    //   gender: this.genders[0],
+    //   answer: 'Cat'
+    // });
+
+    this.signUpForm.form.patchValue({
+      // will patch value of a control only
+      userData: {
+        username: suggestedName
+      }
+    });
+
+    this.signUpForm.form.patchValue({
+      secret: 'pet'
+    });
   }
 
   onSubmit() {
-    console.log(this.form);
+    console.log(this.signUpForm);
   }
 }
