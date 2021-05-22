@@ -3,14 +3,57 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms-td-tut/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
