@@ -37,7 +37,14 @@
             >{{ gender }}
           </label>
         </div>
-        <button class="btn btn-primary" type="submit" [disabled]="signUpForm.invalid">Submit</button>
+        <div formArrayName="hobbies">
+          <h4>Your hobbies</h4>
+          <button class="btn btn-default" (click)="addHobby()">Add hobby</button>
+          <div class="form-group" *ngFor="let hobby of getHobbyFormArray().controls; let i = index">
+            <input type="text" class="form-control" [formControlName]=i>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="signUpForm.invalid && signUpForm.touched">Submit</button>
       </form>
     </div>
   </div>
