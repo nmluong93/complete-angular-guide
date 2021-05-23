@@ -23,10 +23,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-reactive-start/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +119,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
