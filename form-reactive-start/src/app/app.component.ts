@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { log } from 'util';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,11 @@ export class AppComponent implements OnInit {
       'hobbies': new FormArray([])
     });
 
+    this.signUpForm.statusChanges
+      .subscribe(val => console.log('Status of form changes to ' + val));
+
+    this.signUpForm.valueChanges
+      .subscribe(val => console.log('Value of form changes to ' + val));
   }
 
   onSubmit() {
