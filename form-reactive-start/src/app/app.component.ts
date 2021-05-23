@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit {
             this.forbiddenNameValidator.bind(this) // use bind(this) because this validator will be called by Angular not
             // inside our class.
           ]),
-        'email': new FormControl(null, [Validators.required, Validators.email])
+        'email': new FormControl(null, [Validators.required, Validators.email], this.forbiddenEmails.bind(this))
       }),
       gender: new FormControl('male', Validators.required),
       'hobbies': new FormArray([])
@@ -48,5 +49,21 @@ export class AppComponent implements OnInit {
     }
     // return {'nameIsForbidden': false}; => this is not correct, for validation of a control, just return null to make it valid.
     return null;
+  }
+
+  /**
+   * Asynchronous validator
+   */
+  forbiddenEmails(control: FormControl): Promise<any> | Observable<any> {
+    return new Promise<any>((resolve, reject) => {
+      setTimeout(() => {
+        if (control.value === 'test@test.com') {
+          resolve({ emailIsForbidden: true });
+        }
+        else {
+          resolve(null);
+        }
+      }, 5000);
+    });
   }
 }
