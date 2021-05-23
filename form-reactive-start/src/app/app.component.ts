@@ -6,16 +6,20 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   genders = ['male', 'female'];
-
+  forbiddenNames = ['Anna', 'Christ'];
   signUpForm: FormGroup;
 
   ngOnInit(): void {
     this.signUpForm = new FormGroup({
       userData: new FormGroup({
         // wrap the key in the quotation marks to make them can not be modified accidentally
-        'username': new FormControl(null, Validators.required),
+        'username': new FormControl(null,
+          [Validators.required,
+            this.forbiddenNameValidator.bind(this) // use bind(this) because this validator will be called by Angular not
+            // inside our class.
+          ]),
         'email': new FormControl(null, [Validators.required, Validators.email])
       }),
       gender: new FormControl('male', Validators.required),
@@ -38,4 +42,11 @@ export class AppComponent implements OnInit{
     return this.signUpForm.get('hobbies') as FormArray;
   }
 
+  forbiddenNameValidator(control: FormControl): { [s: string]: boolean } /*Key is string type and value is boolean*/ {
+    if (this.forbiddenNames.indexOf(control.value) >= 0) {
+      return { 'nameIsForbidden': true };
+    }
+    // return {'nameIsForbidden': false}; => this is not correct, for validation of a control, just return null to make it valid.
+    return null;
+  }
 }
