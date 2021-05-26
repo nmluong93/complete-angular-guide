@@ -1,6 +1,6 @@
-import { EventEmitter } from '@angular/core';
-import { Subject } from 'rxjs';
-import { Ingredient } from '../shared/ingredient.model';
+import {EventEmitter} from '@angular/core';
+import {Subject} from 'rxjs';
+import {Ingredient} from '../shared/ingredient.model';
 
 export class ShoppingListService {
 
@@ -32,6 +32,7 @@ export class ShoppingListService {
     this.ingredients.push(...ingredients);
     this.notifyDataChanged();
   }
+
   notifyDataChanged() {
     this.ingredientsChanged.next(this.ingredients.slice());
   }
