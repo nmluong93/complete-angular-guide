@@ -5,3 +5,7 @@
 h3 {
   background-color: red;
 }
+
+input.ng-invalid.ng-touched {
+  border-left: solid red 5px;
+}
