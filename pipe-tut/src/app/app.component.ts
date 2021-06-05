@@ -32,11 +32,25 @@ export class AppComponent {
       started: new Date(15, 1, 2017)
     }
   ];
+
+  filterStatus = '';
+
+  // tslint:disable-next-line:typedef
   getStatusClasses(server: {instanceType: string, name: string, status: string, started: Date}) {
     return {
       'list-group-item-success': server.status === 'stable',
       'list-group-item-warning': server.status === 'offline',
       'list-group-item-danger': server.status === 'critical'
     };
+  }
+
+  // tslint:disable-next-line:typedef
+  addServer() {
+    this.servers.push({
+      instanceType: 'medium',
+      name: 'newly added server',
+      status: 'stable',
+      started: new Date()
+    });
   }
 }
