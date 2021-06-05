@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/app/shorten.pipe.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipe-tut/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipe-tut/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.module.ts" afterDir="false" />
     </list>
     <list id="2f6aa39a-bcf0-473c-974d-7fb5e099a3b4" name="Ignored" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,7 @@
       <updated>1620742392963</updated>
       <workItem from="1621041126259" duration="31115000" />
       <workItem from="1622115843259" duration="2138000" />
-      <workItem from="1622876982006" duration="3113000" />
+      <workItem from="1622876982006" duration="4541000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
@@ -115,6 +117,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Shopping list using template driven form" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1030" y="436" key="#com.intellij.ide.util.MemberChooser" timestamp="1622880909390">
+      <screen x="0" y="0" width="2451" height="1440" />
+    </state>
+    <state x="1030" y="436" key="#com.intellij.ide.util.MemberChooser/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622880909390" />
     <state x="618" y="332" key="VCS.ChangelistChooser" timestamp="1622040826121">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -127,9 +133,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1622040748144" />
-    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622878250123">
+    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622881050655">
       <screen x="0" y="0" width="2451" height="1440" />
     </state>
-    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622878250123" />
+    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622881050655" />
   </component>
 </project>
