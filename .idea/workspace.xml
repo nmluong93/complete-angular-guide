@@ -23,10 +23,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/__MACOSX/._pipes-start" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._.DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._e2e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._how-to-use.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._src" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/._tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/e2e/._protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/e2e/._src" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/e2e/._tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/e2e/src/._app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/e2e/src/._app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._.DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._environments" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/._tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/app/._app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/app/._app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/app/._app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/app/._app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/app/._app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/assets/._.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/environments/._environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__MACOSX/pipes-start/src/environments/._environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipe-tut/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipes-start/src/tslint.json" afterDir="false" />
+    </list>
+    <list id="2f6aa39a-bcf0-473c-974d-7fb5e099a3b4" name="Ignored" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/forms-td-tut/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +150,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\project\selflearning\complete-angular-guide\my-second-app\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Project\complete-angular-guide\exercise\node_modules\typescript\lib" />
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -77,14 +164,24 @@
       <option name="presentableId" value="Default" />
       <updated>1620742392963</updated>
       <workItem from="1621041126259" duration="31115000" />
+      <workItem from="1622115843259" duration="2138000" />
+      <workItem from="1622876982006" duration="2720000" />
     </task>
+    <task id="LOCAL-00001" summary="Shopping list using template driven form">
+      <created>1622040746316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622040746316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/routing-start/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/form-reactive-start/node_modules/karma/config.tpl.js" />
       </list>
     </option>
   </component>
@@ -102,5 +199,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Shopping list using template driven form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shopping list using template driven form" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="618" y="332" key="VCS.ChangelistChooser" timestamp="1622040826121">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="618" y="332" key="VCS.ChangelistChooser/0.0.1536.834@0.0.1536.834" timestamp="1622040826121" />
+    <state x="599" y="287" key="VCS.EditChangelistDialog" timestamp="1622040816148">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="599" y="287" key="VCS.EditChangelistDialog/0.0.1536.834@0.0.1536.834" timestamp="1622040816148" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1622040748144">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1622040748144" />
+    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622878250123">
+      <screen x="0" y="0" width="2451" height="1440" />
+    </state>
+    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622878250123" />
   </component>
 </project>
