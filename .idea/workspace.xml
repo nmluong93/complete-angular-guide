@@ -23,9 +23,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-tut/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-tut/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-tut/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/post.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/tslint.json" afterDir="false" />
     </list>
     <list id="2f6aa39a-bcf0-473c-974d-7fb5e099a3b4" name="Ignored" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +61,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -103,12 +135,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -120,6 +153,10 @@
       <screen x="0" y="0" width="2451" height="1440" />
     </state>
     <state x="1030" y="436" key="#com.intellij.ide.util.MemberChooser/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622880909390" />
+    <state x="930" y="437" key="MultipleFileMergeDialog" timestamp="1622970573054">
+      <screen x="0" y="0" width="2436" height="1440" />
+    </state>
+    <state x="930" y="437" key="MultipleFileMergeDialog/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622970573054" />
     <state x="618" y="332" key="VCS.ChangelistChooser" timestamp="1622040826121">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -132,6 +169,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1622040748144" />
+    <state x="999" y="436" key="git4idea.branch.GitSmartOperationDialog" timestamp="1622970508777">
+      <screen x="0" y="0" width="2436" height="1440" />
+    </state>
+    <state x="999" y="436" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622970508777" />
     <state x="888" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622881050655">
       <screen x="0" y="0" width="2451" height="1440" />
     </state>
