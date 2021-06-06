@@ -2,17 +2,17 @@ import { HttpEvent, HttpEventType, HttpHandler, HttpInterceptor, HttpRequest } f
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
-export class AuthInterceptorService implements HttpInterceptor {
+export class LoginInterceptorService implements HttpInterceptor {
+
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const modifiedReq = req.clone({
-      headers: req.headers.append('Auth', 'luongnm')
-    });
-    console.log('AuthInterceptorService called');
-    return next.handle(modifiedReq)
+    console.log('LoginInterceptorService called');
+    console.log(req.url);
+    console.log(req.headers);
+    return next.handle(req)
       .pipe(tap(evt => {
         console.log(evt);
         if (evt.type === HttpEventType.Response) {
-          console.log(`Response arrives in HTTP interceptor ${evt.body}`);
+          console.log(`Response arrives in login HTTP interceptor ${evt.body}`);
         }
       }));
   }
