@@ -23,36 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/http-project/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/app/post.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-project/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-project/src/app/post.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-project/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/http-project/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/http-project/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/http-project/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/http-project/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-project/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/http-project/tslint.json" afterDir="false" />
     </list>
     <list id="2f6aa39a-bcf0-473c-974d-7fb5e099a3b4" name="Ignored" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +72,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\Project\complete-angular-guide\exercise\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\project\complete-angular-guide\http-project\node_modules\typescript\lib" />
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -111,6 +89,7 @@
       <workItem from="1621041126259" duration="31115000" />
       <workItem from="1622115843259" duration="2138000" />
       <workItem from="1622876982006" duration="7254000" />
+      <workItem from="1622971787198" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
@@ -123,12 +102,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/form-reactive-start/node_modules/karma/config.tpl.js" />
-      </list>
-    </option>
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,6 +131,10 @@
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
     <state x="930" y="437" key="MultipleFileMergeDialog/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622970573054" />
+    <state x="721" y="365" key="SettingsEditor" timestamp="1622982562389">
+      <screen x="0" y="0" width="2436" height="1440" />
+    </state>
+    <state x="721" y="365" key="SettingsEditor/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622982562389" />
     <state x="618" y="332" key="VCS.ChangelistChooser" timestamp="1622040826121">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -173,9 +151,10 @@
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
     <state x="999" y="436" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622970508777" />
-    <state x="888" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622881050655">
-      <screen x="0" y="0" width="2451" height="1440" />
+    <state x="883" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1622982552589">
+      <screen x="0" y="0" width="2436" height="1440" />
     </state>
+    <state x="883" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622982552589" />
     <state x="888" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622881050655" />
   </component>
 </project>
