@@ -12,6 +12,7 @@ import { PostService } from './post.service';
 export class AppComponent implements OnInit {
   loadedPosts: PostModel[] = [];
   isFetching = false;
+  error = null;
 
   constructor(private http: HttpClient, private postService: PostService) {
   }
@@ -21,7 +22,13 @@ export class AppComponent implements OnInit {
   }
 
   onCreatePost(postData: PostModel) {
-    this.postService.onCreatePost(postData);
+    this.postService.onCreatePost(postData)
+      .subscribe(rs => {
+        console.log(rs);
+        this.error = null;
+      }, error => {
+        this.handleError(error);
+      });
   }
 
   onFetchPosts() {
@@ -29,7 +36,13 @@ export class AppComponent implements OnInit {
   }
 
   onClearPosts() {
-
+    this.postService.clearPosts()
+      .subscribe(rs => {
+        this.loadedPosts = [];
+        this.error = null;
+      }, error => {
+        this.handleError(error);
+      });
   }
 
   private fetchPosts() {
@@ -38,6 +51,29 @@ export class AppComponent implements OnInit {
       .subscribe(rs => {
         this.isFetching = false;
         this.loadedPosts = rs;
+        this.error = null;
+        console.log(rs);
+      }, error => {
+        this.handleError(error);
       });
+  }
+
+  /**
+   * The type of error based on API - in this case the Firebase API
+   */
+  private handleError(error: any) {
+    this.isFetching = false;
+    if (error) {
+      if (error.error) {
+        this.error = error.error.error;
+      }
+      else {
+        this.error = error.message;
+      }
+    }
+  }
+
+  onHandleError() {
+    this.error = null;
   }
 }
