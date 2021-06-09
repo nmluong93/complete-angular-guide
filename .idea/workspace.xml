@@ -24,17 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-detail/recipe-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-detail/recipe-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-detail/recipe-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-detail/recipe-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-edit/recipe-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-edit/recipe-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-edit/recipe-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-edit/recipe-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-list/recipe-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe-list/recipe-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipe.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-edit/shopping-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-edit/shopping-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-edit/shopping-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-edit/shopping-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shopping-list/shopping-list.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/data-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/data-storage.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +83,8 @@
       <workItem from="1622876982006" duration="7254000" />
       <workItem from="1622971787198" duration="1676000" />
       <workItem from="1622984269339" duration="7667000" />
-      <workItem from="1623159467400" duration="5068000" />
+      <workItem from="1623159467400" duration="5926000" />
+      <workItem from="1623243765415" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>

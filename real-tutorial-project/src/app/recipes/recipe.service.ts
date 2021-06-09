@@ -7,26 +7,15 @@ import { Subject } from 'rxjs';
 @Injectable()
 export class RecipeService {
 
+  recipeChanged = new Subject<Recipe[]>();
+
   constructor(private slService: ShoppingListService) {
   }
 
-  private recipes: Recipe[] = [
-    new Recipe('Tasty Pizza', 'A super-tasty Pizza - just awesome!',
-      'https://www.citypassguide.com/media/slideshow/best-pizza-in-ho-chi-minh-city.jpg',
-      [
-        new Ingredient('Meat', 1),
-        new Ingredient('Butter', 2)
-      ]),
-    new Recipe('Curry', 'Strange curry',
-      'https://www.inspiredtaste.net/wp-content/uploads/2021/03/Chicken-Curry-Recipe-3-1200.jpg',
-      [
-        new Ingredient('Secret one', 1),
-        new Ingredient('Curry powder', 2)
-      ])
-  ];
+  private recipes: Recipe[] = [];
 
   getRecipes(): Recipe[] {
-    return this.recipes;
+    return this.recipes.slice();
   }
 
   getRecipe(id: number): Recipe {
@@ -39,14 +28,25 @@ export class RecipeService {
 
   updateRecipe(id: number, value: Recipe) {
     this.recipes[id] = value;
+    this.onRecipesChange();
   }
 
   addRecipe(value: Recipe) {
     this.recipes.push(value);
+    this.onRecipesChange();
   }
 
   deleteRecipe(index: number) {
     this.recipes.splice(index, 1);
+    this.onRecipesChange();
   }
 
+  onRecipesChange() {
+    this.recipeChanged.next(this.recipes);
+  }
+
+  updateRecipes(rs: Recipe[]) {
+    this.recipes = rs;
+    this.onRecipesChange();
+  }
 }
