@@ -23,14 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,8 @@
       <workItem from="1622971787198" duration="1676000" />
       <workItem from="1622984269339" duration="7667000" />
       <workItem from="1623159467400" duration="5926000" />
-      <workItem from="1623243765415" duration="5817000" />
+      <workItem from="1623243765415" duration="6452000" />
+      <workItem from="1623462131377" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>

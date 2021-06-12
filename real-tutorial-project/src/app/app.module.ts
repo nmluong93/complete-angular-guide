@@ -20,6 +20,7 @@ import { RecipeService } from './recipes/recipe.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RecipeResolverService } from './recipes/recipe-resolver.service';
 import { AuthComponent } from './auth/auth.component';
+import { AuthService } from './auth/auth.service';
 
 
 @NgModule({
@@ -44,7 +45,7 @@ import { AuthComponent } from './auth/auth.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ShoppingListService, DataStorageService, RecipeService, RecipeResolverService],
+  providers: [ShoppingListService, DataStorageService, RecipeService, RecipeResolverService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
