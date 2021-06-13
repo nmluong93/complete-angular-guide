@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Observable } from 'rxjs';
 import { AuthResponseData, AuthService } from './auth.service';
 
 @Component({
@@ -11,6 +12,8 @@ export class AuthComponent implements OnInit {
 
   authResponseData: AuthResponseData;
   isLoginMode = true;
+  isLoading = false;
+  error: string;
 
   constructor(private authService: AuthService) { }
 
@@ -25,19 +28,29 @@ export class AuthComponent implements OnInit {
     if (loginForm.invalid) {
       return;
     }
+
+    this.isLoading = true;
+    this.error = '';
+    let authObs: Observable<AuthResponseData>;
     if (this.isLoginMode) {
-      // ...
+      authObs = this.authService.login(loginForm.value?.email, loginForm.value?.password);
     }
     else {
-      this.authService.signup(loginForm.value?.email, loginForm.value?.password)
-        .subscribe(rs => {
-            console.log(rs);
-            this.authResponseData = rs;
-          },
-          error => {
-            console.log(`error occurs ${error}`);
-          })
-      loginForm.reset();
+      authObs = this.authService.signup(loginForm.value?.email, loginForm.value?.password);
+
     }
+    authObs.subscribe(rs => {
+      console.log(rs);
+      this.authResponseData = rs;
+      this.isLoading = false;
+    },
+      errorRs => {
+        console.log(`error occurs ${errorRs}`);
+        console.log(errorRs);
+        // this.error = errorRs.error.error.message;
+        this.error = errorRs;
+        this.isLoading = false;
+      });
+    loginForm.reset();
   }
 }
