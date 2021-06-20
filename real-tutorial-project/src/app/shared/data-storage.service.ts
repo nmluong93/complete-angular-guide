@@ -25,35 +25,17 @@ export class DataStorageService {
   }
 
   fetchRecipes() {
-    // Since user of AuthService is a BehaviorSubject so we can use this to listen to the latest user which was emitted before,
-    // no need to require the user is emitted right now (but use the latest emitted value/user)
-    return this.authService.user
-      .pipe(
-        // only get the first value then automatically unsubscribe.
-        take(1),
-        // This exhaustMap is to wait for the first observable $user emitted change then continue with the new observable
-        // of HTTP response.
-        exhaustMap(user => {
-          // This means whenever the first user emitted, then we will return the second observable => Http's response.
-
-          // User token attached in the request
-          // for Firebase, we attache the token in the request as a query parameter but other APIs we usually attach it in the
-          // header
-          return this.httpClient.get<Recipe[]>(DataStorageService.RECIPE_URL,
-            {
-              params: new HttpParams().set('auth', user.token as string)
-            });
-        }),
-        map(recipes => {
-          // map to Recipe again to prevent the undefined ingredient in recipe from DB => broken.
-          return recipes.map(recipe => {
-            return { ...recipe, ingredients: recipe.ingredients ? recipe.ingredients : [] };
-          });
-        }),
-        tap(recipes => {
-          this.recipeService.updateRecipes(recipes);
+    return this.httpClient.get<Recipe[]>(DataStorageService.RECIPE_URL
+    ).pipe(
+      map(recipes =>
+        recipes.map(recipe => {
+          return { ...recipe, ingredients: recipe.ingredients ? recipe.ingredients : [] };
         })
-      );
+      ),
+      tap(recipes => {
+        this.recipeService.updateRecipes(recipes);
+      })
+    );
   }
 
 }
