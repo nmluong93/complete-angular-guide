@@ -23,6 +23,7 @@ import { AuthComponent } from './auth/auth.component';
 import { AuthService } from './auth/auth.service';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
+import { AuthGuardService } from './auth/auth-guard.service';
 
 
 @NgModule({
@@ -48,7 +49,7 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ShoppingListService, DataStorageService, RecipeService, RecipeResolverService, AuthService,
+  providers: [ShoppingListService, DataStorageService, RecipeService, RecipeResolverService, AuthService, AuthGuardService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }],
   bootstrap: [AppComponent]
 })

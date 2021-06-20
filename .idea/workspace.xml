@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth-guard.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,7 @@
       <workItem from="1623588128699" duration="10000" />
       <workItem from="1623639205009" duration="857000" />
       <workItem from="1623641170465" duration="881000" />
-      <workItem from="1624167162624" duration="8837000" />
+      <workItem from="1624167162624" duration="9893000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
@@ -136,10 +138,10 @@
     </state>
     <state x="810" y="378" key="#Inspections/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1624177457764" />
     <state x="617" y="218" key="#TSLint/-1920.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1621744720572" />
-    <state x="1024" y="436" key="#com.intellij.ide.util.MemberChooser" timestamp="1624178782011">
+    <state x="1024" y="436" key="#com.intellij.ide.util.MemberChooser" timestamp="1624180157507">
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
-    <state x="1024" y="436" key="#com.intellij.ide.util.MemberChooser/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1624178782011" />
+    <state x="1024" y="436" key="#com.intellij.ide.util.MemberChooser/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1624180157507" />
     <state x="1030" y="436" key="#com.intellij.ide.util.MemberChooser/-1920.0.1449.864/0.0.2451.1440@0.0.2451.1440" timestamp="1622880909390" />
     <state x="835" y="316" key="CommitChangelistDialog2" timestamp="1623075263358">
       <screen x="0" y="0" width="2436" height="1440" />
