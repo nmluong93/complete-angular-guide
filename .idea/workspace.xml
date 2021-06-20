@@ -23,13 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth-interceptor.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
       <workItem from="1623588128699" duration="10000" />
       <workItem from="1623639205009" duration="857000" />
       <workItem from="1623641170465" duration="881000" />
-      <workItem from="1624167162624" duration="7794000" />
+      <workItem from="1624167162624" duration="8837000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
@@ -162,6 +157,10 @@
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
     <state x="721" y="365" key="SettingsEditor/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1622982562389" />
+    <state x="939" y="461" width="540" height="524" key="StructurePopup" timestamp="1624179058444">
+      <screen x="0" y="0" width="2436" height="1440" />
+    </state>
+    <state x="939" y="461" width="540" height="524" key="StructurePopup/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1624179058444" />
     <state x="618" y="332" key="VCS.ChangelistChooser" timestamp="1622040826121">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

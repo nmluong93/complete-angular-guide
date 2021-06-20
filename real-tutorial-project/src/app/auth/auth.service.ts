@@ -34,6 +34,8 @@ export class AuthService {
   // @ts-ignore
   userBehaviorSubject = new BehaviorSubject<User>(null);
 
+  private tokenExpirationTimer: any;
+
   constructor(private httpClient: HttpClient, private router: Router) { }
 
   signup(emailVal: string, pwd: string) {
@@ -53,6 +55,18 @@ export class AuthService {
     // @ts-ignore
     this.userBehaviorSubject.next(null);
     this.router.navigate(['/auth']);
+    localStorage.removeItem('userData');
+    if (this.tokenExpirationTimer) {
+      clearTimeout(this.tokenExpirationTimer);
+    }
+    this.tokenExpirationTimer = null;
+  }
+
+  autoLogout(expirationDuration: number /* milli-second */) {
+    console.log(`User token will be expired after ${expirationDuration * 1000} seconds `);
+    this.tokenExpirationTimer = setTimeout(() => {
+      this.logout();
+    }, expirationDuration);
   }
 
   login(emailVal: string, pwd: string) {
@@ -69,15 +83,18 @@ export class AuthService {
   }
 
   autoLogin() {
-    const userData: { email: string; id: string; _token: string; _tokenExpirationDate: Date }
+    // here if we parse the _tokeExpirationDate directly to Date by defining its data type is Date, then some method of Date
+    // will not be available in the userData._tokenExpirationDate
+    const userData: { email: string; id: string; _token: string; _tokenExpirationDate: string }
       = JSON.parse(localStorage.getItem('userData') as string);
     if (!userData) {
       return;
     }
-    // const user = new User(userData.email, userData.id, userData._token, new Date(userData._tokenExpirationDate));
-    const user = new User(userData.email, userData.id, userData._token, userData._tokenExpirationDate);
+    const user = new User(userData.email, userData.id, userData._token, new Date(userData._tokenExpirationDate));
     if (user.token) {
       this.userBehaviorSubject.next(user);
+      const expiredTime = new Date(userData._tokenExpirationDate).getTime() - new Date().getTime();
+      this.autoLogout(expiredTime);
     }
   }
 
@@ -85,6 +102,7 @@ export class AuthService {
     const exDate = new Date(new Date().getTime() + exDateInSecond * 1000);
     const user = new User(email, userId, token, exDate);
     this.userBehaviorSubject.next(user);
+    this.autoLogout(exDateInSecond * 1_000);
     localStorage.setItem('userData', JSON.stringify(user));
   }
 
