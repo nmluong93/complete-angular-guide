@@ -11,7 +11,7 @@ export class AuthInterceptorService implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    return this.authService.user.pipe(
+    return this.authService.userBehaviorSubject.pipe(
       // only get the first value then automatically unsubscribe.
       take(1),
       // This exhaustMap is to wait for the first observable $user emitted change then continue with the new observable

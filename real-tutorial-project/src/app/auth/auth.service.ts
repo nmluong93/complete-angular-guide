@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
-import { BehaviorSubject, Subject, throwError } from 'rxjs';
+import { BehaviorSubject, throwError } from 'rxjs';
 import { User } from './user.model';
+import { Router } from '@angular/router';
 
 // request/response data defined in https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 
@@ -31,9 +32,9 @@ export class AuthService {
   static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAXIQXKgnqtAgGZDVxOfL6q5qZuPLcEAqc';
 
   // @ts-ignore
-  user = new BehaviorSubject<User>(null);
+  userBehaviorSubject = new BehaviorSubject<User>(null);
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private router: Router) { }
 
   signup(emailVal: string, pwd: string) {
     return this.httpClient.post<AuthResponseData>(AuthService.SIGNUP_URL,
@@ -43,10 +44,16 @@ export class AuthService {
         returnSecureToken: true
       }
     ).pipe(catchError(this.handleError),
-    tap(rs =>
-      this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
-    ));
-}
+      tap(rs =>
+        this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
+      ));
+  }
+
+  logout() {
+    // @ts-ignore
+    this.userBehaviorSubject.next(null);
+    this.router.navigate(['/auth']);
+  }
 
   login(emailVal: string, pwd: string) {
     return this.httpClient.post<AuthResponseData>(AuthService.LOGIN_URL,
@@ -61,10 +68,24 @@ export class AuthService {
       ));
   }
 
+  autoLogin() {
+    const userData: { email: string; id: string; _token: string; _tokenExpirationDate: Date }
+      = JSON.parse(localStorage.getItem('userData') as string);
+    if (!userData) {
+      return;
+    }
+    // const user = new User(userData.email, userData.id, userData._token, new Date(userData._tokenExpirationDate));
+    const user = new User(userData.email, userData.id, userData._token, userData._tokenExpirationDate);
+    if (user.token) {
+      this.userBehaviorSubject.next(user);
+    }
+  }
+
   private handleAuthentication(email: string, userId: string, token: string, exDateInSecond: number) {
     const exDate = new Date(new Date().getTime() + exDateInSecond * 1000);
     const user = new User(email, userId, token, exDate);
-    this.user.next(user);
+    this.userBehaviorSubject.next(user);
+    localStorage.setItem('userData', JSON.stringify(user));
   }
 
   private handleError(errResponse: HttpErrorResponse) {
