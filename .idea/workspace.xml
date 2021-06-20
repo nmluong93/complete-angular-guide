@@ -23,13 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/loading-spinner/loading-spinner.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/loading-spinner/loading-spinner.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/data-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/data-storage.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +91,9 @@
       <workItem from="1623243765415" duration="6452000" />
       <workItem from="1623462131377" duration="5377000" />
       <workItem from="1623588128699" duration="10000" />
+      <workItem from="1623639205009" duration="857000" />
+      <workItem from="1623641170465" duration="881000" />
+      <workItem from="1624167162624" duration="4978000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
@@ -105,6 +106,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -164,9 +175,9 @@
     <state x="999" y="436" key="git4idea.branch.GitSmartOperationDialog" timestamp="1622970508777">
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
-    <state x="881" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1623161391226">
+    <state x="881" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1624175513619">
       <screen x="0" y="0" width="2436" height="1440" />
     </state>
-    <state x="881" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1623161391226" />
+    <state x="881" y="325" width="672" height="678" key="search.everywhere.popup/-1920.0.1437.864/0.0.2436.1440@0.0.2436.1440" timestamp="1624175513619" />
   </component>
 </project>

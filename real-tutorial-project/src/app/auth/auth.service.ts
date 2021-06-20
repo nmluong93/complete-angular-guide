@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
-import { Subject, throwError } from 'rxjs';
+import { BehaviorSubject, Subject, throwError } from 'rxjs';
 import { User } from './user.model';
 
 // request/response data defined in https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
@@ -30,7 +30,8 @@ export class AuthService {
 
   static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAXIQXKgnqtAgGZDVxOfL6q5qZuPLcEAqc';
 
-  user = new Subject<User>();
+  // @ts-ignore
+  user = new BehaviorSubject<User>(null);
 
   constructor(private httpClient: HttpClient) { }
 
@@ -39,11 +40,11 @@ export class AuthService {
       {
         email: emailVal,
         password: pwd,
-        returnSecureToke: true
+        returnSecureToken: true
       }
     ).pipe(catchError(this.handleError),
     tap(rs =>
-      this.handleAuthentification(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
+      this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
     ));
 }
 
@@ -52,15 +53,15 @@ export class AuthService {
       {
         email: emailVal,
         password: pwd,
-        returnSecureToke: true
+        returnSecureToken: true
       }
     ).pipe(catchError(this.handleError),
       tap(rs =>
-        this.handleAuthentification(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
+        this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
       ));
   }
 
-  private handleAuthentification(email: string, userId: string, token: string, exDateInSecond: number) {
+  private handleAuthentication(email: string, userId: string, token: string, exDateInSecond: number) {
     const exDate = new Date(new Date().getTime() + exDateInSecond * 1000);
     const user = new User(email, userId, token, exDate);
     this.user.next(user);
