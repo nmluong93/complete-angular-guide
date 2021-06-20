@@ -14,9 +14,10 @@ export class AuthComponent implements OnInit {
   authResponseData: AuthResponseData;
   isLoginMode = true;
   isLoading = false;
-  error: string;
+  error: any;
 
-  constructor(private authService: AuthService,
+  constructor(
+    private authService: AuthService,
     private router: Router) { }
 
   ngOnInit(): void {
@@ -55,5 +56,9 @@ export class AuthComponent implements OnInit {
         this.isLoading = false;
       });
     loginForm.reset();
+  }
+
+  onHandleError() {
+    this.error = null;
   }
 }

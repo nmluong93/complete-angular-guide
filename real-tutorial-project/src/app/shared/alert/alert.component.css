@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  with: 100vw;
+  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 50;
@@ -12,7 +12,7 @@
   position: fixed;
   top: 30vh;
   left: 20vw;
-  withd: 60vw;
+  width: 60vw;
   padding: 16px;
   z-index: 100;
   background: white;
