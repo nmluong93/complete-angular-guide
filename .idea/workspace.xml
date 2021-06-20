@@ -23,10 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/placeholder.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
       <workItem from="1623588128699" duration="10000" />
       <workItem from="1623639205009" duration="857000" />
       <workItem from="1623641170465" duration="881000" />
-      <workItem from="1624167162624" duration="14796000" />
+      <workItem from="1624167162624" duration="14907000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>

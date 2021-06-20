@@ -75,6 +75,7 @@ export class AuthComponent implements OnInit, OnDestroy {
 
   /**
    * Dynamically create alert component - programmatically.
+   * This is not recommended. Please use *ngIf if possible, it is much simpler.
    */
   private showErrorAlert(message: string) {
     // this initialization won't work but the ComponentFactory
