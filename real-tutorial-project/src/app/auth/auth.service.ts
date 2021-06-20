@@ -31,8 +31,8 @@ export class AuthService {
 
   static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAXIQXKgnqtAgGZDVxOfL6q5qZuPLcEAqc';
 
-  // @ts-ignore
-  userBehaviorSubject = new BehaviorSubject<User>(null);
+  // BehaviorSubject to let us can access the previous value of Subject
+  userBehaviorSubject = new BehaviorSubject<User | null>(null);
 
   private tokenExpirationTimer: any;
 
