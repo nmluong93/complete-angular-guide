@@ -4,6 +4,7 @@ import {LoadingSpinnerComponent} from './loading-spinner/loading-spinner.compone
 import {PlaceholderDirective} from './placeholder.directive';
 import {DropdownDirective} from './dropdown.directive';
 import {CommonModule} from '@angular/common';
+import {LoggingService} from "../logging.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,16 @@ import {CommonModule} from '@angular/common';
     PlaceholderDirective,
     DropdownDirective,
     CommonModule
-  ]
+  ],
+  /*
+    Since the shared module is imported by AppModule and ShoppingList module
+    + in AppModule it is eager-loaded module => the LoggingService instance in this case is application-wide.
+    + in ShoppingListModule, it is considered as lazy-loaded module => the LoggingService instance in this case only
+      belongs to ShoppingListModule
+
+     => This is the most programmatic bug
+  */
+  providers: [LoggingService]
 })
 export class SharedModule {
 

@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core.module';
 import {AuthModule} from './auth/auth.module';
+import {LoggingService} from './logging.service';
 
 
 @NgModule({
@@ -25,6 +26,8 @@ import {AuthModule} from './auth/auth.module';
     CoreModule,
     AuthModule
   ],
+  // the same as providedIn: 'root' of the service decorator
+  providers: [LoggingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
