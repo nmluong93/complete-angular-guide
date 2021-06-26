@@ -23,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/recipes/recipes.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/dropdown.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/shared/dropdown.directive.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +94,7 @@
       <workItem from="1623639205009" duration="857000" />
       <workItem from="1623641170465" duration="881000" />
       <workItem from="1624167162624" duration="14907000" />
-      <workItem from="1624674198751" duration="971000" />
+      <workItem from="1624674198751" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
