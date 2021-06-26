@@ -6,13 +6,14 @@ import {RecipeItemComponent} from './recipe-list/recipe-item/recipe-item.compone
 import {RecipeStartComponent} from './recipe-start/recipe-start.component';
 import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
 import {RouterModule} from '@angular/router';
-import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RecipesRoutingModule} from './recipes-routing.module';
-import {DropdownDirective} from '../shared/dropdown.directive';
+import {SharedModule} from '../shared/shared.module';
 
 
 @NgModule({
+  // In declarations part, a component must be declared 1 time (crossed-module too)
+  // => you cannot declare RecipesComponent in both here and AppModule when you import this module to AppModule.
   declarations: [
     RecipesComponent,
     RecipeListComponent,
@@ -24,10 +25,10 @@ import {DropdownDirective} from '../shared/dropdown.directive';
   // We don't need to import the service since it is only required in AppModule
   imports: [
     RouterModule,
-    CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    RecipesRoutingModule
+    RecipesRoutingModule,
+    SharedModule
   ],
   // we don't need to export these components because they are only used internally - in the Recipes Module not the AppModule
   /* exports: [

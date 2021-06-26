@@ -12,25 +12,18 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {RecipeResolverService} from './recipes/recipe-resolver.service';
 import {AuthComponent} from './auth/auth.component';
 import {AuthService} from './auth/auth.service';
-import {LoadingSpinnerComponent} from './shared/loading-spinner/loading-spinner.component';
 import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {AuthGuardService} from './auth/auth-guard.service';
-import {AlertComponent} from './shared/alert/alert.component';
-import {PlaceholderDirective} from './shared/placeholder.directive';
 import {RecipesModule} from './recipes/recipes.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
-import {DropdownDirective} from "./shared/dropdown.directive";
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    DropdownDirective,
     AppComponent,
     HeaderComponent,
     AuthComponent,
-    LoadingSpinnerComponent,
-    AlertComponent,
-    PlaceholderDirective
   ],
   imports: [
     BrowserModule,
@@ -39,7 +32,8 @@ import {DropdownDirective} from "./shared/dropdown.directive";
     HttpClientModule,
     ReactiveFormsModule,
     RecipesModule,
-    ShoppingListModule
+    ShoppingListModule,
+    SharedModule
   ],
   providers: [ShoppingListService, DataStorageService, RecipeService, RecipeResolverService, AuthService, AuthGuardService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }],
