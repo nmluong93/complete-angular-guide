@@ -4,7 +4,7 @@ import {LoadingSpinnerComponent} from './loading-spinner/loading-spinner.compone
 import {PlaceholderDirective} from './placeholder.directive';
 import {DropdownDirective} from './dropdown.directive';
 import {CommonModule} from '@angular/common';
-import {LoggingService} from "../logging.service";
+import {LoggingService} from '../logging.service';
 
 @NgModule({
   declarations: [
