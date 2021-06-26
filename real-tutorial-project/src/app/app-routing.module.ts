@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
     {path: '', redirectTo: '/recipes', pathMatch: 'full'},
@@ -13,7 +13,9 @@ const routes: Routes = [
   ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // this PreloadAllModules strategy tells Angular that, when we are at the first module - may be the eager loaded one
+  // then the Shopping-List and Recipe modules are already loaded - available => don't see any delay
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
