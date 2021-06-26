@@ -9,10 +9,12 @@ import {RouterModule} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RecipesRoutingModule} from './recipes-routing.module';
+import {DropdownDirective} from '../shared/dropdown.directive';
 
 
 @NgModule({
   declarations: [
+    DropdownDirective,
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
