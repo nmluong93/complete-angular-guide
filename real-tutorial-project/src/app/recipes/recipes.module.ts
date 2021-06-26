@@ -14,7 +14,6 @@ import {DropdownDirective} from '../shared/dropdown.directive';
 
 @NgModule({
   declarations: [
-    DropdownDirective,
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
@@ -30,14 +29,15 @@ import {DropdownDirective} from '../shared/dropdown.directive';
     ReactiveFormsModule,
     RecipesRoutingModule
   ],
-  exports: [
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    RecipeStartComponent,
-    RecipeEditComponent
-  ]
+  // we don't need to export these components because they are only used internally - in the Recipes Module not the AppModule
+  /* exports: [
+     RecipesComponent,
+     RecipeListComponent,
+     RecipeDetailComponent,
+     RecipeItemComponent,
+     RecipeStartComponent,
+     RecipeEditComponent
+   ]*/
 })
 export class RecipesModule {
 
