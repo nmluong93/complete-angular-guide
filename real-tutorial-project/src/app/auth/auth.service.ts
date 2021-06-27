@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { catchError, tap } from 'rxjs/operators';
-import { BehaviorSubject, throwError } from 'rxjs';
-import { User } from './user.model';
-import { Router } from '@angular/router';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
+import {catchError, tap} from 'rxjs/operators';
+import {BehaviorSubject, throwError} from 'rxjs';
+import {User} from './user.model';
+import {Router} from '@angular/router';
+import {environment} from '../../environments/environment';
 
 // request/response data defined in https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 
@@ -19,24 +20,23 @@ export interface AuthResponseData {
   // The uid of the newly created user.
   localId: string;
   // whether the email is for an existing account => login case
-  registered?: boolean
+  registered?: boolean;
 
 }
 
 @Injectable()
 export class AuthService {
 
-  static SIGNUP_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=\n' +
-    'AIzaSyAXIQXKgnqtAgGZDVxOfL6q5qZuPLcEAqc';
-
-  static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAXIQXKgnqtAgGZDVxOfL6q5qZuPLcEAqc';
+  static SIGNUP_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + environment.firebaseAPIKey;
+  static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + environment.firebaseAPIKey;
 
   // BehaviorSubject to let us can access the previous value of Subject
   userBehaviorSubject = new BehaviorSubject<User | null>(null);
 
   private tokenExpirationTimer: any;
 
-  constructor(private httpClient: HttpClient, private router: Router) { }
+  constructor(private httpClient: HttpClient, private router: Router) {
+  }
 
   signup(emailVal: string, pwd: string) {
     return this.httpClient.post<AuthResponseData>(AuthService.SIGNUP_URL,
