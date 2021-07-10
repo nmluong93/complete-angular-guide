@@ -11,7 +11,7 @@ import {CoreModule} from './core.module';
 import {AuthModule} from './auth/auth.module';
 import {LoggingService} from './logging.service';
 import {StoreModule} from '@ngrx/store';
-import {shoppingListReducer} from './shopping-list/store/shopping-list.reducer';
+import {appReducer} from './store/app.reducer';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import {shoppingListReducer} from './shopping-list/store/shopping-list.reducer';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({shoppingList: shoppingListReducer}),
+    StoreModule.forRoot(appReducer),
     ReactiveFormsModule,
     SharedModule,
     AuthModule,
