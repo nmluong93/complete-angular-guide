@@ -12,6 +12,8 @@ import {AuthModule} from './auth/auth.module';
 import {LoggingService} from './logging.service';
 import {StoreModule} from '@ngrx/store';
 import {appReducer} from './store/app.reducer';
+import {EffectsModule} from '@ngrx/effects';
+import {AuthEffects} from './auth/store/auth.effects';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import {appReducer} from './store/app.reducer';
     AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot(appReducer),
+    EffectsModule.forRoot([AuthEffects]),
     ReactiveFormsModule,
     SharedModule,
     AuthModule,

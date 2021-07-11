@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {catchError, tap} from 'rxjs/operators';
-import {BehaviorSubject, throwError} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 import {User} from './user.model';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
+import {Store} from '@ngrx/store';
+import * as fromApp from '../store/app.reducer';
+import * as fromAuth from './store/auth.action';
 
 // request/response data defined in https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 
@@ -31,30 +32,20 @@ export class AuthService {
   static LOGIN_URL = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + environment.firebaseAPIKey;
 
   // BehaviorSubject to let us can access the previous value of Subject
-  userBehaviorSubject = new BehaviorSubject<User | null>(null);
+  // userBehaviorSubject = new BehaviorSubject<User | null>(null);
 
   private tokenExpirationTimer: any;
 
-  constructor(private httpClient: HttpClient, private router: Router) {
-  }
-
-  signup(emailVal: string, pwd: string) {
-    return this.httpClient.post<AuthResponseData>(AuthService.SIGNUP_URL,
-      {
-        email: emailVal,
-        password: pwd,
-        returnSecureToken: true
-      }
-    ).pipe(catchError(this.handleError),
-      tap(rs =>
-        this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
-      ));
+  constructor(
+    private httpClient: HttpClient,
+    private router: Router,
+    private store: Store<fromApp.AppState>) {
   }
 
   logout() {
     // @ts-ignore
-    this.userBehaviorSubject.next(null);
-    this.router.navigate(['/auth']);
+    // this.userBehaviorSubject.next(null);
+    this.store.dispatch(fromAuth.logout());
     localStorage.removeItem('userData');
     if (this.tokenExpirationTimer) {
       clearTimeout(this.tokenExpirationTimer);
@@ -69,19 +60,6 @@ export class AuthService {
     }, expirationDuration);
   }
 
-  login(emailVal: string, pwd: string) {
-    return this.httpClient.post<AuthResponseData>(AuthService.LOGIN_URL,
-      {
-        email: emailVal,
-        password: pwd,
-        returnSecureToken: true
-      }
-    ).pipe(catchError(this.handleError),
-      tap(rs =>
-        this.handleAuthentication(rs.email, rs.localId, rs.idToken, +rs.expiresIn)
-      ));
-  }
-
   autoLogin() {
     // here if we parse the _tokeExpirationDate directly to Date by defining its data type is Date, then some method of Date
     // will not be available in the userData._tokenExpirationDate
@@ -92,36 +70,17 @@ export class AuthService {
     }
     const user = new User(userData.email, userData.id, userData._token, new Date(userData._tokenExpirationDate));
     if (user.token) {
-      this.userBehaviorSubject.next(user);
+      // this.userBehaviorSubject.next(user);
+      this.store.dispatch(fromAuth.authenticateSuccess({
+        payload: {
+          email: userData.email,
+          userId: userData.id,
+          token: userData._token,
+          expirationDate: new Date(userData._tokenExpirationDate)
+        }
+      }));
       const expiredTime = new Date(userData._tokenExpirationDate).getTime() - new Date().getTime();
       this.autoLogout(expiredTime);
     }
-  }
-
-  private handleAuthentication(email: string, userId: string, token: string, exDateInSecond: number) {
-    const exDate = new Date(new Date().getTime() + exDateInSecond * 1000);
-    const user = new User(email, userId, token, exDate);
-    this.userBehaviorSubject.next(user);
-    this.autoLogout(exDateInSecond * 1_000);
-    localStorage.setItem('userData', JSON.stringify(user));
-  }
-
-  private handleError(errResponse: HttpErrorResponse) {
-    let errMsg = 'An unknown error';
-    if (!errResponse.error || !errResponse.error.error) {
-      return throwError(errMsg);
-    }
-    switch (errResponse.error.error.message) {
-      case 'EMAIL_EXISTS':
-        errMsg = 'This email exists already';
-        break;
-      case 'EMAIL_NOT_FOUND':
-        errMsg = 'This email doesn\'t exist';
-        break;
-      case 'INVALID_PASSWORD':
-        errMsg = 'Invalid password';
-        break;
-    }
-    return throwError(errMsg);
   }
 }
