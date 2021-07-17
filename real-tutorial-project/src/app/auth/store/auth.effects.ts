@@ -4,10 +4,9 @@ import * as fromAuth from './auth.action';
 import {catchError, map, switchMap, tap} from 'rxjs/operators';
 import {AuthService} from '../auth.service';
 import {HttpClient} from '@angular/common/http';
-import {Router} from "@angular/router";
-import {of} from "rxjs";
-import {User} from "../user.model";
-import {createAction} from "@ngrx/store";
+import {Router} from '@angular/router';
+import {of} from 'rxjs';
+import {User} from '../user.model';
 
 export interface AuthResponseData {
   // 	A Firebase Auth ID token for the newly created user.
@@ -85,6 +84,9 @@ export class AuthEffects {
             returnSecureToken: true
           }
         ).pipe(
+          tap(resData => {
+            this.authService.setLogoutTimer(+resData.expiresIn * 1_000);
+          }),
           map(resData => {
             return handleAuthentication(resData);
           }),
@@ -94,7 +96,7 @@ export class AuthEffects {
 
   @Effect({dispatch: false}) // this effect doesn't dispatch any action.
   authRedirect = this.actions$.pipe(
-    ofType(fromAuth.AUTHENTICATE_SUCCESS, fromAuth.LOGOUT),
+    ofType(fromAuth.AUTHENTICATE_SUCCESS),
     tap(() => {
       this.router.navigate(['/']);
     })
@@ -111,6 +113,9 @@ export class AuthEffects {
             returnSecureToken: true
           }
         ).pipe(
+          tap(resData => {
+            this.authService.setLogoutTimer(+resData.expiresIn * 1_000);
+          }),
           map(resData => {
             return handleAuthentication(resData);
           }),
@@ -122,7 +127,9 @@ export class AuthEffects {
   authLogout = this.actions$.pipe(
     ofType(fromAuth.LOGOUT),
     tap(() => {
+      this.authService.clearLogoutTimer();
       localStorage.removeItem('userData');
+      this.router.navigate(['/auth']);
     }));
 
   @Effect()

@@ -30,7 +30,7 @@ import {AuthEffects} from './auth/store/auth.effects';
     ReactiveFormsModule,
     SharedModule,
     AuthModule,
-    CoreModule
+    CoreModule,
   ],
   // the same as providedIn: 'root' of the service decorator
   providers: [LoggingService],
