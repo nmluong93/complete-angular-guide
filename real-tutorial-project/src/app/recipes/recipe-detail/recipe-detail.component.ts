@@ -1,7 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Recipe} from '../recipe.model';
-import {RecipeService} from '../recipe.service';
+import {Store} from '@ngrx/store';
+import * as fromApp from '../../store/app.reducer';
+import {map, switchMap} from 'rxjs/operators';
+import * as fromRecipe from '../store/recipe.action';
+import * as fromShoppingList from '../../shopping-list/store/shopping-list.action';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -13,20 +17,30 @@ export class RecipeDetailComponent implements OnInit {
   recipe!: Recipe;
   private id: number;
 
-  constructor(private recipeService: RecipeService,
-              private router: Router,
-              private route: ActivatedRoute) {
+  constructor(private router: Router,
+              private route: ActivatedRoute,
+              private store: Store<fromApp.AppState>) {
   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
-      this.id = +params.id;
-      this.recipe = this.recipeService.getRecipe(this.id);
-    });
+    this.route.params
+      .pipe(map(params => +params.id),
+        switchMap(id => {
+          this.id = id;
+          return this.store.select('recipe');
+        }),
+        map(storeData => {
+          return storeData.recipes.find((e, index) => index === this.id);
+        }))
+      .subscribe(recipe => {
+        if (recipe) {
+          this.recipe = recipe;
+        }
+      });
   }
 
   addIngredientsToShoppingList() {
-    this.recipeService.addIngredientsToShoppingList(this.recipe.ingredients);
+    this.store.dispatch(fromShoppingList.addIngredients({payload: this.recipe.ingredients}));
   }
 
   onEdit() {
@@ -34,7 +48,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   deleteRecipe() {
-    this.recipeService.deleteRecipe(this.id);
+    this.store.dispatch(fromRecipe.deleteRecipe({payload: this.id}));
     this.router.navigate([''], {relativeTo: this.route});
   }
 }

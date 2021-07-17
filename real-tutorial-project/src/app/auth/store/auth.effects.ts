@@ -22,6 +22,8 @@ export interface AuthResponseData {
   // whether the email is for an existing account => login case
   registered?: boolean;
 
+  redirect: boolean;
+
 }
 
 const handleAuthentication = (resData: AuthResponseData) => {
@@ -33,7 +35,8 @@ const handleAuthentication = (resData: AuthResponseData) => {
       email: resData.email,
       userId: resData.localId,
       token: resData.idToken,
-      expirationDate: exDate
+      expirationDate: exDate,
+      redirect: true
     }
   });
 };
@@ -97,8 +100,10 @@ export class AuthEffects {
   @Effect({dispatch: false}) // this effect doesn't dispatch any action.
   authRedirect = this.actions$.pipe(
     ofType(fromAuth.AUTHENTICATE_SUCCESS),
-    tap(() => {
-      this.router.navigate(['/']);
+    tap(authSuccessAction => {
+      if (authSuccessAction.payload.redirect) {
+        this.router.navigate(['/']);
+      }
     })
   );
 
@@ -151,7 +156,8 @@ export class AuthEffects {
             email: userData.email,
             userId: userData.id,
             token: userData._token,
-            expirationDate: new Date(userData._tokenExpirationDate)
+            expirationDate: new Date(userData._tokenExpirationDate),
+            redirect: false
           }
         });
         // const expiredTime = new Date(userData._tokenExpirationDate).getTime() - new Date().getTime();
