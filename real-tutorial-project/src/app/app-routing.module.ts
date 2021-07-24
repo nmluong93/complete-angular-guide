@@ -15,7 +15,7 @@ const routes: Routes = [
 @NgModule({
   // this PreloadAllModules strategy tells Angular that, when we are at the first module - may be the eager loaded one
   // then the Shopping-List and Recipe modules are already loaded - available => don't see any delay
-  imports: [RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, initialNavigation: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

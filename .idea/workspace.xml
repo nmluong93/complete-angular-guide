@@ -22,17 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/.firebase/hosting.cmVhbC10dXRvcmlhbC1wcm9qZWN0XGRpc3RccmVhbC10dXRvcmlhbC1wcm9qZWN0IA.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/firebase-debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/real-tutorial-project/dist/-real-tutorial-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-tutorial-project/real-tutorial-project/dist/real-tutorial-project/index.html" afterDir="false" />
+    <list default="true" id="ff3f6ec1-6e11-4f61-b39f-089046b540b4" name="Default Changelist" comment="- Finish NgRx for recipe">
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.server.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/src/main.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-tutorial-project/tsconfig.server.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-tutorial-project/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-tutorial-project/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\Project\complete-angular-guide\observer-start\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Project\complete-angular-guide\directive-creation-app\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,6 +102,7 @@
       <workItem from="1623641170465" duration="881000" />
       <workItem from="1624167162624" duration="14907000" />
       <workItem from="1624674198751" duration="15507000" />
+      <workItem from="1627115946679" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping list using template driven form">
       <created>1622040746316</created>
